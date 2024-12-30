@@ -2728,16 +2728,6 @@ applyVariableValue (key:any,value:any,type:any){
       brandingData: brandingData ? brandingData : me.config.branding
     });
 
-    if (me.config.widgetSDKInstace) {
-      if (me.chatEle?.querySelector('.kr-wiz-menu-chat')) {
-        if (me.config.branding.general.widgetPanel) {
-          me.chatEle.querySelector('.kr-wiz-menu-chat').classList.add('show');
-        } else {
-          me.chatEle.querySelector('.kr-wiz-menu-chat').classList.remove('show');
-        }
-      }
-    }
-
     if (type == 'welcome' && isEditor) {
       if (me.config.branding.welcome_screen.show) {
         me.chatEle.querySelector('.chat-widgetwrapper-main-container').classList.remove(me.config.branding.chat_bubble.expand_animation);
