@@ -29,7 +29,7 @@ export function ChatContainer(props: any) {
 
     return (
         <div className={chatContainerClass} aria-label='chat-window-section'>
-            <div className={`kr-wiz-menu-chat defaultTheme-kore ${hostInstance.config.widgetSDKInstace && brandingInfo.general.widgetPanel ? 'show' : ''}`}></div>
+            <div className="kr-wiz-menu-chat defaultTheme-kore"></div>
             <AvatarComponent {...props} />
             <ChatWidget {...props} />
             { brandingInfo.welcome_screen.show &&
